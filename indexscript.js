@@ -3,7 +3,7 @@ const resultDiv = document.getElementById('result');
 const actualAkanName = document.getElementById('realAkanName');
 
 const maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
-const femaleNames = ['Akosia', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+const femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 
 AkanForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -12,11 +12,11 @@ AkanForm.addEventListener('submit', function(event) {
     const gender = document.getElementById('gender').value;
 
     if (!birthdate || gender === '') {
-        alert('Please proveide both birthdate and gender');
+        alert('Please provide both birthdate and gender');
         return;
     }
 
-    // This is ro claculate the dat of the week
+    
     const dayOfWeek = birthdate.getDay();
 
     let realAkanName;
